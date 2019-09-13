@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CountElement(arr) {
+        let count = 0;
+        arr = new Array();
+        let i;
+        let vt;
+        let instead = parseInt(prompt("kich thuoc mang: "));
+        for (i = 0; i < instead; i++) {
+            arr[i] = Math.floor(Math.random() * 100 + 1);
+            document.write(arr[i] + "  ");
+        }
+        document.write("<br>");
+        let num = parseInt(prompt("enter a number: "))
+        for (i = 0; i < instead; i++) {
+            if (num === arr[i]) {
+                vt = i;
+                count++;
+                document.write("vi tri: "+vt+" ");
+            }
+        }
+        document.write("so phan tu trong mang la: "+count+"  ");
+
+    }
+   // let number=prompt("enter a number: ");
+    CountElement();
+</script>
+</body>
+</html>
